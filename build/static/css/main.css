@@ -1934,7 +1934,7 @@ h5, .c-h5, h6, .c-h6 {
 .c-main-bunner__content {
   display: inline-block;
   vertical-align: middle;
-  max-width: 98%;
+  max-width: 96%;
   position: relative;
   z-index: 1;
   color: #fff;
