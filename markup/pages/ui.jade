@@ -1,0 +1,33 @@
+doctype html
+html(lang="ru")
+
+	include ../components/head/head
+	include ../components/includeJS/includeJS
+
+	head
+		+head(head.defaults)
+	body
+		.o-wrapper
+			.o-center
+				.o-page-section
+					button.c-btn.c-btn--info Оформить заявку
+				.o-page-section
+					button.c-btn.c-btn--info.c-btn--full-w Оформить заявку
+				.o-page-section
+					a(href="#").c-btn.c-btn--primary Отправить
+				.o-page-section
+					a(href="#").c-btn.c-btn--primary.c-btn--lg-fs Отправить
+				.o-page-section
+					.c-dropdown
+						button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
+						.c-dropdown__menu
+							a(href="#").c-dropdown__link Пункт 1
+							a(href="#").c-dropdown__link.is-active Пункт 2
+							a(href="#").c-dropdown__link Пункт 3
+							a(href="#").c-dropdown__link Пункт 4
+				.o-page-section
+					input(type="text", placeholder="Ваше имя").c-field
+				.o-page-section
+					textarea(rows="4", placeholder="Ваше имя").c-field
+		
+		+includeJS()

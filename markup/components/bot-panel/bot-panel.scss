@@ -1,0 +1,40 @@
+.c-bot-panel {
+	background: $default-fill;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3) inset;
+	text-align: center;
+	padding: 30px 0;
+
+	&__icons {
+		font-size: 0;
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 15px;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__h {
+		margin: 0 0 20px 0;
+	}
+}
+
+// ---- media points
+
+@media (min-width: $media-xs) {
+
+}
+
+@media (min-width: $media-sm) {
+
+
+}
+@media (min-width: $media-md) {
+
+	.c-bot-panel {
+		padding: 70px 0;
+	}
+
+}

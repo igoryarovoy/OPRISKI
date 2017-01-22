@@ -1,0 +1,42 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+
+$page-width: 990px;
+
+$main-space: 30px;
+$sm-space: 20px;
+$sm-space-less2: $sm-space / 2;
+
+$main-radius: 3px;
+
+
+
+// -------- typography
+
+$main-font : 'Trebuchet MS';
+$main-font-size: 16px;
+$main-line-height: 1.5;
+
+$main-text-color: #222222;
+$primary-text-color: #00509e;
+$primary-light-text-color: #2582df;
+$danger-text-color: #eb2626;
+$success-text-color: #31bc00;
+$info-text-color: #888888;
+
+
+
+// --------  fills
+
+$main-fill: url('%=static=%general/main-bg.png');
+$default-fill: #fff;
+$primary-fill: #78abdf;
+$warning-fill: #fffee5;
+
+
+// -------- media
+
+$media-xs: 568px;
+$media-sm: 768px; 
+$media-md: 990px;

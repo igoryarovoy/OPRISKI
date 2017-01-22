@@ -1,0 +1,68 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+@mixin border-radius($value) {
+    border-radius: $value;
+}
+
+@mixin transition($type, $time) {
+    transition: $type, $time;
+}
+
+@mixin placeholderColor($color) {
+    &::-webkit-input-placeholder {color:$color;}
+    &::-moz-placeholder          {color:$color;}
+    &:-moz-placeholder           {color:$color;}
+    &:-ms-input-placeholder      {color:$color;}
+}
+
+@mixin list-unstyle() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin reset-checkbox-radio() {
+    position: absolute;
+    left: -9999999999px;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    z-index: 0;
+}
+
+@mixin bg-gradient($from, $to) {
+    background: $from;
+    background: linear-gradient(to top, $from, $to);
+}
+
+// You can add your own mixins here:

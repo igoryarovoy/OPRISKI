@@ -1,0 +1,52 @@
+doctype html
+html(lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/main-bunner/main-bunner
+    include ../components/crumbs/crumbs
+    include ../components/result/result
+    include ../components/bot-panel/bot-panel
+    include ../components/footer/footer
+    include ../components/includeJS/includeJS
+
+    head
+        +head(head.defaults)
+    body
+        .o-wrapper
+            .o-center
+                +header()
+                .o-page-section.o-page-section--sm
+                    +mainBunner()
+                .o-page-section.o-page-section--xs
+                    h1.c-h1 Лёгкий способ подобрать опрыскиватель
+                    +crumbs()
+                    .o-grid.o-grid--sm
+                        .o-grid__xs-p-5.o-grid__sm-3.u-mb-10
+                            .c-dropdown
+                                button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
+                                .c-dropdown__menu
+                                    a(href="#").c-dropdown__link Пункт 1
+                                    a(href="#").c-dropdown__link.is-active Пункт 2
+                                    a(href="#").c-dropdown__link Пункт 3
+                                    a(href="#").c-dropdown__link Пункт 4
+                        .o-grid__xs-p-5.o-grid__sm-3.u-mb-10
+                            .c-dropdown
+                                button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Тип опрыскивателя
+                                .c-dropdown__menu
+                                    a(href="#").c-dropdown__link Пункт 1
+                                    a(href="#").c-dropdown__link.is-active Пункт 2
+                                    a(href="#").c-dropdown__link Пункт 3
+                                    a(href="#").c-dropdown__link Пункт 4
+                .o-page-section.o-page-section--sm
+                    +result('c-result--best c-box--marked')
+                    +result('c-result--recommend c-box--marked')
+                    +result('c-result--optimal c-box--marked')
+                    +result('c-result--tested')
+                    - for (let i = 0;i < 6;i++)
+                        +result()
+                .o-page-section.o-page-section--sm.u-text-center
+                    a(href="#").c-btn.c-btn--info Показать больше предложений
+            +botPanel()
+        +footer()
+        +includeJS()

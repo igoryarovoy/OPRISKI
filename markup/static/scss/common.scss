@@ -1,0 +1,223 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    
+    * {
+        box-sizing: inherit;
+    }
+}
+body {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+    color: $main-text-color;
+    background: $main-fill;
+}
+
+@import 'entry/partials/_grid.scss';
+
+@import 'entry/partials/_bs-animation.scss';
+
+@import 'entry/partials/_slick.scss';
+
+@import 'entry/partials/_utilities.scss';
+
+@import 'entry/partials/_objects.scss';
+
+
+
+a {
+    color: $primary-light-text-color;
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+h1, .c-h1, h2, .c-h2, h3, .c-h3, h4, .c-h4, h5, .c-h5, h6, .c-h6 {
+    display: block;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+h1, .c-h1 {
+    font-size: 26px;
+}
+h2, .c-h2 {
+    font-size: 22px;
+}
+h3, .c-h3 {
+    font-size: 20px;
+}
+h4, .c-h4 {
+    font-size: 18px;
+}
+h5, .c-h5, h6, .c-h6 {
+    font-size: 16px;
+}
+
+
+// SLIDER
+
+.slick-slider {
+    opacity: 0; 
+
+    &.slick-initialized {
+        opacity: 1;
+    }
+}
+.slick-arrow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: 0;
+    width: 30px;
+    font-size: 0;
+    color: transparent;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.slick-prev {
+    left: 0;
+
+    &:after {
+        right: 0;
+        @include bg($i-arrow-prev);
+    }
+
+    &:hover {
+        &:after {
+            @include bg($i-arrow-prev-active);
+        }
+    }
+}
+.slick-next {
+    right: 0;
+
+    &:after {
+        left: 0;
+        @include bg($i-arrow-next);
+    }
+
+    &:hover {
+        &:after {
+            @include bg($i-arrow-next-active);
+        }
+    }
+}
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        background: none;
+        border: 2px solid #fff;
+        margin: 0 2.5px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+        @include border-radius(50%);
+    }
+    .slick-active {
+        background: #fff;
+    }
+
+    button {
+        display: none;
+    }
+}
+.slick-slide {
+    outline: none;
+}
+
+// SLIDER END
+
+
+// MODALS
+
+.modal-open {
+    overflow: hidden;
+}
+
+.c-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    font-size: 0;
+    text-align: center;
+    background: rgba(0, 34, 69, 0.9);
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 100%;
+    }
+
+    &:before,
+    &__dialog {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    &__dialog {
+        font-size: 14px;
+        text-align: left;
+        width: 592px;
+        background: #fff;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    &.fade {
+        .c-modal__dialog {
+            transform: scale(0);
+            @include transition(all, .15s);
+        }
+    }
+
+    &.in {
+        .c-modal__dialog {
+            transform: scale(1);
+        }
+    }
+
+}
+
+
+// MODALS END

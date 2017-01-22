@@ -1,0 +1,33 @@
+// objects styles
+
+.o-wrapper {
+    min-height: 100%;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 41px;
+    }
+}
+
+.o-center {
+    max-width: $page-width + 20px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.o-page-section {
+    margin-bottom: $main-space;
+
+    &--sm {
+        margin-bottom: $sm-space;
+    }
+
+    &--xs {
+        margin-bottom: $sm-space / 2;
+    }
+
+    // &:last-child {
+    //     margin: 0;
+    // }
+}
