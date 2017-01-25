@@ -2,6 +2,7 @@
 
 .o-wrapper {
     min-height: 100%;
+    overflow: hidden;
 
     &:after {
         content: '';

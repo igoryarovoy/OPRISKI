@@ -1,0 +1,10 @@
+mixin gallery()
+	.c-gallery
+		.c-view.slick-slider.js-view
+			- for (let i = 0;i < 6;i++)
+				.c-view__item
+					img(data-lazy="static/img/content/img-gallery-big.jpg", alt="").c-gallery__img
+		.c-nav.slick-slider.js-nav-slider
+			- for (let i = 0;i < 6;i++)
+				.c-nav__item
+					img(data-lazy="static/img/content/img-gallery-sm.jpg", alt="").c-gallery__img

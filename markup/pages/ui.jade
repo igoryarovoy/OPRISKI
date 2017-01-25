@@ -2,6 +2,7 @@ doctype html
 html(lang="ru")
 
 	include ../components/head/head
+	include ../components/rating/rating
 	include ../components/includeJS/includeJS
 
 	head
@@ -16,6 +17,8 @@ html(lang="ru")
 				.o-page-section
 					a(href="#").c-btn.c-btn--primary Отправить
 				.o-page-section
+					a(href="#").c-btn.c-btn--primary.c-btn--full-h Отправить
+				.o-page-section
 					a(href="#").c-btn.c-btn--primary.c-btn--lg-fs Отправить
 				.o-page-section
 					.c-dropdown
@@ -29,5 +32,7 @@ html(lang="ru")
 					input(type="text", placeholder="Ваше имя").c-field
 				.o-page-section
 					textarea(rows="4", placeholder="Ваше имя").c-field
+				.o-page-section
+					+rating('1')
 		
 		+includeJS()

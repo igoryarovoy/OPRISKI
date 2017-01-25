@@ -20,6 +20,22 @@
 }
 
 
+.u-text-primary {
+    color: $primary-text-color !important;
+}
+.u-text-primary-light {
+    color: $primary-light-text-color !important;
+}
+.u-text-success {
+    color: $success-text-color !important;
+}
+.u-text-danger { 
+    color: $danger-text-color !important;
+}
+.u-text-info {
+    color: $info-text-color !important;
+}
+
 .u-fs-12 {
     font-size: 12px !important;
 }

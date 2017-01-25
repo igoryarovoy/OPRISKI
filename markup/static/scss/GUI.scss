@@ -19,9 +19,16 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 100%;
 
     &--lg-fs {
         font-size: 18px;
+    }
+
+    &--full-h {
+        height: 40px;
+        line-height: 38px;
+        width: 260px;
     }
 
     &--full-w {
@@ -67,33 +74,6 @@
 }
 
 // -------- BUTTONS END
-
-
-
-// -------- FIELDS
-
-.c-field {
-    display: block;
-    width: 100%;
-    outline: none;
-    resize: none;
-    background: #fff;
-    @include border-radius($main-radius);
-    border: 1px solid #c3c3c3;
-    height: 36px;
-    padding: 0 10px;
-    font-size: 16px;
-
-    &:focus {
-        border-color: #a1a1a1;
-    }
-}
-textarea.c-field {
-    height: auto;
-    padding: 10px;
-}
-
-// -------- FIELDS END
 
 
 
@@ -203,6 +183,45 @@ textarea.c-field {
 
 
 
+// -------- FORM
+
+.c-field {
+    display: block;
+    width: 100%;
+    outline: none;
+    resize: none;
+    background: #fff;
+    @include border-radius($main-radius);
+    border: 1px solid #c3c3c3;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 16px;
+    @include placeholderColor($info-text-color);
+
+    &:focus {
+        border-color: #a1a1a1;
+    }
+
+    &--success {
+        @include placeholderColor($success-text-color);
+    }
+    &--danger {
+        @include placeholderColor($danger-text-color);
+    }
+}
+textarea.c-field {
+    height: auto;
+    padding: 10px;
+}
+
+.c-form-g {
+    margin: $sm-space-less2 0 0 0;
+}
+
+// -------- FORM END
+
+
+
 // -------- BOX
 
 .c-box {
@@ -212,6 +231,92 @@ textarea.c-field {
     &--marked {
         background: $warning-fill;
     }
+
+    &__section {
+        padding: 15px 20px;
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.35) inset;
+
+        &:first-child {
+            box-shadow: none;
+        }
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+        &--dark {
+            background: #f7f7f7;
+        }
+    }
+
+}
+
+// ---- media points
+
+@media (min-width: $media-xs) {
+    
+    .c-box {
+        &__section {
+            padding: 25px 30px;
+        }
+    }
+
+}
+
+@media (min-width: $media-sm) {
+
+
+}
+@media (min-width: $media-md) {
+
+
 }
 
 // -------- BOX END
+
+
+
+// -------- LIST
+
+.c-list {
+    
+    &__row {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-bottom: 1px dotted $info-text-color;
+    }
+
+    &__cell {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 5px 0;
+
+        .c-rating {
+            vertical-align: middle;
+            margin: -3px 0 0 0;
+        }
+    }
+
+}
+
+// -------- LIST END
+
+
+// -------- RATTEXT
+
+.c-rt {
+    font-size: 16px;
+    padding-left: 24px;
+    position: relative;
+    color: $primary-text-color;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -9px;
+    }
+}
+
+// -------- RATTEXT END

@@ -1,0 +1,39 @@
+.c-item-ico-sm {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	margin: 0 0 20px 0;
+	font-size: 14px;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&__cell {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 10px;
+
+		&:first-child {
+			padding: 0;
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .4);
+	}
+
+	&__text {
+		display: block;
+		color: $main-text-color;
+	}
+
+	&:hover {
+		.c-item-ico-sm__text {
+			color: $primary-light-text-color;
+		}
+	}
+}
