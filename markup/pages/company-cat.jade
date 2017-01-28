@@ -7,6 +7,7 @@ html(lang="ru")
     include ../components/gallery/gallery
     include ../components/rating/rating
     include ../components/item-ico-sm/item-ico-sm
+    include ../components/item-img/item-img
     include ../components/footer/footer
     include ../components/includeJS/includeJS
 
@@ -24,33 +25,43 @@ html(lang="ru")
                                 .c-box
                                     .c-box__section
                                         .o-page-section.o-page-section--sm
-                                            h1.c-h2 Опрыскиватель прицепной 200 л. Agromech (Польша)
+                                            .u-text-center.u-mb-25
+                                                .c-img.u-mb-15
+                                                    img(src="static/img/content/company-logo.png", alt="")
+                                                h1.c-h2 Компания Агропласт
                                             +gallery()
                                         .o-page-section.o-page-section--sm
                                             .c-h4.u-text-primary Описание
                                             p
-                                                |Опрыскиватель это машина или аппарат для распыла и нанесения жидких пестицидов (в виде растворов, суспензий, эмульсий различной концентрации) на растения в целях борьбы с их вредителями и болезнями, а также для уничтожения сорняков. О. используют и при дезинсекции помещений. По назначению различают О. для обработки полевых культур, садов, виноградников; по типу распыливающих устройств — гидравлические, вентиляторные и аэрозольные (см. Аэрозольный генератор); по способу транспортировки во время работы — ранцевые, конные, тракторные (навесные и прицепные) и авиационные.
-                                            .c-h4.u-text-primary Характеристики
-                                            .o-grid
-                                                .o-grid__sm-8.o-grid__md-5
-                                                    .c-list
-                                                        .c-list__row
-                                                            .c-list__cell Производитель
-                                                            .c-list__cell.u-w-75 Agromech
-                                                        .c-list__row
-                                                            .c-list__cell Объем бака
-                                                            .c-list__cell.u-w-75 2 000 л
-                                                        .c-list__row
-                                                            .c-list__cell Вес
-                                                            .c-list__cell.u-w-75 1 325 кг
-                                                        .c-list__row
-                                                            .c-list__cell Вес загруженный
-                                                            .c-list__cell.u-w-75 3 325 кг
-                                                        .c-list__row
-                                                            .c-list__cell Длинна штанги
-                                                            .c-list__cell.u-w-75 15 м
-                                        .o-page-section.o-page-section--sm.u-text-center
-                                            a(href="#").c-btn.c-btn--primary.c-btn--full-h Сделать заявку
+                                                |Опрыскиватель это машина или аппарат для распыла и нанесения жидких пестицидов (в виде растворов, суспензий, эмульсий различной концентрации) на растения в целях борьбы с их вредителями и болезнями, а также для уничтожения сорняков. О. используют и при дезинсекции помещений. По назначению различают О. для обработки полевых культур, садов, виноградников; по типу распыливающих устройств — гидравлические, вентиляторные и аэрозольные (см. Аэрозольный генератор); по способу транспортировки во время работы — ранцевые, конные, тракторные (навесные и прицепные) и авиационные. 
+                                            .c-h4.u-text-primary Модельный ряд компании
+                                    .c-box__section
+                                        .c-h5.u-text-primary Опрыскиватели со штангой от 5м:
+                                        .o-grid.o-grid--inline.c-wrap-item-img
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                    .c-box__section
+                                        .c-h5.u-text-primary Опрыскиватели высокой проходимости:
+                                        .o-grid.o-grid--inline.c-wrap-item-img
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                    .c-box__section
+                                        .c-h5.u-text-primary Жёлтенькие опрыскиватели:
+                                        .o-grid.o-grid--inline.c-wrap-item-img
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
+                                            .o-grid__xs-lanscape-6.o-grid__md-4
+                                                +itemImg('static/img/content/img-item-img.jpg')
                             .o-page-section
                                 .c-box
                                     .c-box__section
@@ -167,27 +178,9 @@ html(lang="ru")
                                             |<span class="u-text-danger">минусы модели:</span> для обработки полевых культур, садов, виноградников; по типу распыливающих устройств — гидравлические, вентиляторные и аэрозольные (см. Аэрозольный генератор); по способу транспортировки во время работы
                         .o-grid__sm-5.o-grid__md-4
                             .o-page-section
-                                .c-box.c-box--marked
-                                    .c-box__section
-                                        .c-h4.u-text-primary.u-text-center Agromech
-                                        .o-grid.u-mb-20.u-text-center
-                                            .o-grid__xs-4
-                                                .u-fs-12.u-text-info РЕЙТИНГ
-                                                .u-text-primary.c-rt.c-ico.c-ico--star 4,5
-                                            .o-grid__xs-4
-                                                .u-fs-12.u-text-info ШТАНГА
-                                                .u-text-primary 15 м
-                                            .o-grid__xs-4
-                                                .u-fs-12.u-text-info БАК
-                                                .u-text-primary 2 000 л
-                                        a(href="#").c-btn.c-btn--primary.c-btn--full-w.c-btn--full-h Сделать заявку
-                            .o-page-section
                                 .c-box
                                     .c-box__section
                                         .c-h4.u-text-primary.u-text-center Рейтинг модели
-                                        .u-fs-12.u-text-info.u-text-center.u-mb-10
-                                            |Опрыскиватель прицепной 200 л.
-                                            div Agromech (Польша)
                                         .c-list.u-fs-14.u-mb-20
                                             .c-list__row
                                                 .c-list__cell Клиренс
@@ -234,7 +227,7 @@ html(lang="ru")
                             .o-page-section
                                 .c-box
                                     .c-box__section
-                                        .c-h4.u-text-primary.u-text-center Диллеры
+                                        .c-h4.u-text-primary.u-text-center Другие компании
                                         +itemIcoSm(
                                             'static/img/content/img-sm-item.png',
                                             'OprPro'
@@ -246,22 +239,6 @@ html(lang="ru")
                                         +itemIcoSm(
                                             'static/img/content/img-sm-item.png',
                                             'Vater Splash Co'
-                                        )
-                            .o-page-section
-                                .c-box
-                                    .c-box__section
-                                        .c-h4.u-text-primary.u-text-center Похожие опрыскиватели
-                                        +itemIcoSm(
-                                            'static/img/content/img-sm-item-2.png',
-                                            'Опрыскиватель прицепной 200 л. Agromech (Польша)'
-                                        )
-                                        +itemIcoSm(
-                                            'static/img/content/img-sm-item-2.png',
-                                            'Agromech Опрыскиватель зелёненький'
-                                        )
-                                        +itemIcoSm(
-                                            'static/img/content/img-sm-item-2.png',
-                                            'Прицепной опрыскиватель 200 л. Agromech'
                                         )
         +footer()
         +includeJS()

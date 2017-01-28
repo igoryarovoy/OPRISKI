@@ -1,0 +1,35 @@
+.c-wrap-item-img {
+	margin-top: -12px!important;
+	margin-bottom: -12px!important;
+}
+.c-item-img {
+	font-size: 14px;
+	margin: 12px 0;
+
+	.c-rt {
+		margin-right: 7px;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 0 7px 0;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		display: block;
+		color: $main-text-color;
+	}
+
+	&:hover {
+		.c-item-img__content {
+			color: $primary-light-text-color;
+			text-decoration: underline;
+		}
+	}
+}

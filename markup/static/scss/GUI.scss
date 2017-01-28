@@ -320,3 +320,18 @@ textarea.c-field {
 }
 
 // -------- RATTEXT END
+
+
+// -------- IMG
+
+.c-img {
+    font-size: 0;
+
+    img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// -------- IMG END
