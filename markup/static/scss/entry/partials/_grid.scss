@@ -36,9 +36,9 @@
 .o-grid__xs-10, .o-grid__sm-10, .o-grid__md-10,
 .o-grid__xs-11, .o-grid__sm-11, .o-grid__md-11,
 .o-grid__xs-12, .o-grid__sm-12, .o-grid__md-12,
-.o-grid__xs-lanscape-1, .o-grid__xs-lanscape-2, .o-grid__xs-lanscape-3, .o-grid__xs-lanscape-4,
-.o-grid__xs-lanscape-5, .o-grid__xs-lanscape-6, .o-grid__xs-lanscape-7, .o-grid__xs-lanscape-8,
-.o-grid__xs-lanscape-9, .o-grid__xs-lanscape-10, .o-grid__xs-lanscape-11, .o-grid__xs-lanscape-12 {
+.o-grid__xs-landscape-1, .o-grid__xs-landscape-2, .o-grid__xs-landscape-3, .o-grid__xs-landscape-4,
+.o-grid__xs-landscape-5, .o-grid__xs-landscape-6, .o-grid__xs-landscape-7, .o-grid__xs-landscape-8,
+.o-grid__xs-landscape-9, .o-grid__xs-landscape-10, .o-grid__xs-landscape-11, .o-grid__xs-landscape-12 {
   float: left;
   min-height: 1px;
   padding-left: 15px;
@@ -83,40 +83,40 @@
 }
 
 @media (min-width: $media-xs) {
-  .o-grid__xs-lanscape-12 {
+  .o-grid__xs-landscape-12 {
     width: 100%;
   }
-  .o-grid__xs-lanscape-11 {
+  .o-grid__xs-landscape-11 {
     width: 91.66666667%;
   }
-  .o-grid__xs-lanscape-10 {
+  .o-grid__xs-landscape-10 {
     width: 83.33333333%;
   }
-  .o-grid__xs-lanscape-9 {
+  .o-grid__xs-landscape-9 {
     width: 75%;
   }
-  .o-grid__xs-lanscape-8 {
+  .o-grid__xs-landscape-8 {
     width: 66.66666667%;
   }
-  .o-grid__xs-lanscape-7 {
+  .o-grid__xs-landscape-7 {
     width: 58.33333333%;
   }
-  .o-grid__xs-lanscape-6 {
+  .o-grid__xs-landscape-6 {
     width: 50%;
   }
-  .o-grid__xs-lanscape-5 {
+  .o-grid__xs-landscape-5 {
     width: 41.66666667%;
   }
-  .o-grid__xs-lanscape-4 {
+  .o-grid__xs-landscape-4 {
     width: 33.33333333%;
   }
-  .o-grid__xs-lanscape-3 {
+  .o-grid__xs-landscape-3 {
     width: 25%;
   }
-  .o-grid__xs-lanscape-2 {
+  .o-grid__xs-landscape-2 {
     width: 16.66666667%;
   }
-  .o-grid__xs-lanscape-1 {
+  .o-grid__xs-landscape-1 {
     width: 8.33333333%;
   }
 }

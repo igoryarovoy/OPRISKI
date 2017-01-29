@@ -177,6 +177,30 @@
             @include bg($i-star);
         }
     }
+
+    &--location {
+        &:before {
+            @include bg($i-location);
+        }
+    }
+    &--location-end {
+        &:after {
+            @include bg($i-location);
+        }
+    }
+}
+
+
+.c-link-location {
+    position: relative;
+    padding: 0 0 0 17px;
+    margin: 0 0 0 5px;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
 }
 
 // -------- ICONS END
@@ -247,28 +271,26 @@ textarea.c-field {
         &--dark {
             background: #f7f7f7;
         }
+
+        &--sm {
+            padding: 16px 20px;
+        }
+
     }
 
 }
-
-// ---- media points
 
 @media (min-width: $media-xs) {
     
     .c-box {
         &__section {
             padding: 25px 30px;
+
+            &--sm {
+                padding: 16px 30px;
+            }
         }
     }
-
-}
-
-@media (min-width: $media-sm) {
-
-
-}
-@media (min-width: $media-md) {
-
 
 }
 
@@ -335,3 +357,46 @@ textarea.c-field {
 }
 
 // -------- IMG END
+
+
+
+// -------- SLIDE CONTENT
+
+.c-slide-content {
+    height: 500px!important;
+    overflow: hidden;
+    position: relative;
+    display: block!important;
+
+    &.collapsing,
+    &.in {
+        height: auto!important;
+
+        .c-slide-content__btn {
+            display: none;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 30px 30px 30px;
+        background: $warning-fill;
+        text-align: center;
+        box-shadow: 0 0 20px 15px $warning-fill;
+    }
+}
+
+
+@media (min-width: $media-md) {
+    
+    .c-slide-content {
+        height: 910px!important;
+    }
+
+}
+
+
+// -------- SLIDE CONTENT END

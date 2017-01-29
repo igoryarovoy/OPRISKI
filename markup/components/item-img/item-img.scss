@@ -24,6 +24,11 @@
 	&__content {
 		display: block;
 		color: $main-text-color;
+		margin: 0 0 9px 0;
+
+		&:last-child {
+			margin: 0;
+		}
 	}
 
 	&:hover {

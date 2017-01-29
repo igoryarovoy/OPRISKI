@@ -427,3 +427,12 @@
 .u-w-350 {
     width: 350px !important;
 }
+
+
+@media (max-width: $media-xs - 1px) {
+    
+    .u-mb-15-xs {
+        margin-bottom: 15px !important;
+    }
+
+}
