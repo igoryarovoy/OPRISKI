@@ -197,7 +197,8 @@ p {
     outline: 0;
     font-size: 0;
     text-align: center;
-    background: rgba(0, 34, 69, 0.9);
+    background: rgba(46, 96, 146, 0.7);
+    padding: 20px;
 
     &:before {
         content: '';
@@ -212,12 +213,44 @@ p {
     }
     
     &__dialog {
+        position: relative;
         font-size: 14px;
         text-align: left;
-        width: 592px;
-        background: #fff;
-        margin: 20px;
+        width: 650px;
+        max-width: 100%;
+        background: #f7f7f7;
         overflow: hidden;
+        @include border-radius($main-radius);
+        padding: 20px;
+    }
+
+    &__content {
+        width: 310px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &__h {
+        margin: 0 0 23px 0;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @include bg($i-close);
+        }
     }
 
     &.fade {
@@ -230,6 +263,26 @@ p {
     &.in {
         .c-modal__dialog {
             transform: scale(1);
+        }
+    }
+
+}
+
+@media (min-width: $media-xs) {
+    
+    .c-modal {
+        &__close {
+            right: 15px;
+            top: 15px;
+        }
+    }
+
+}
+@media (min-width: $media-md) {
+    
+    .c-modal {
+        &__dialog {
+            padding: 45px 20px 50px;
         }
     }
 

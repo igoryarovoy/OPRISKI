@@ -240,6 +240,14 @@ textarea.c-field {
 
 .c-form-g {
     margin: $sm-space-less2 0 0 0;
+
+    &--form {
+        margin: 0 0 20px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
 }
 
 // -------- FORM END
