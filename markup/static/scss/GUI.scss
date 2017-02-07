@@ -239,6 +239,7 @@ textarea.c-field {
 }
 
 .c-form-g {
+    position: relative;
     margin: $sm-space-less2 0 0 0;
 
     &--form {
@@ -248,7 +249,25 @@ textarea.c-field {
             margin: 0;
         }
     }
+
+    &.has-error {
+        .help-block {
+            display: block;
+        }
+    }
 }
+.help-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 13px;
+    margin: 0;
+}
+.help-block-error {
+    color: red;
+}
+
 
 // -------- FORM END
 

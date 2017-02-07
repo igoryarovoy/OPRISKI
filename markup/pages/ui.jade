@@ -28,11 +28,13 @@ html(lang="ru")
 					.c-form-g.c-form-g--form
 						label(for="f-area").c-h5.u-mb-10 Район:
 						input(type="text", id="f-area").c-field
-					.c-form-g.c-form-g--form
+						p.help-block.help-block-error Текст ошибки
+					.c-form-g.c-form-g--form.has-error
 						.u-clearfix
 							.u-fl-r.u-mt-2.u-fs-12.u-text-info в формате: +380123456789
 							label(for="f-phone").c-h5.u-mb-10 Ваш телефон:
 						input(type="text", id="f-phone").c-field
+						p.help-block.help-block-error Текст ошибки
 					.u-text-center.u-mt-30
 						button(type="submit").c-btn.c-btn--primary.c-btn--full-h Подать заявку
 		.o-wrapper

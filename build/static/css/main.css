@@ -686,6 +686,7 @@ textarea.c-field {
 }
 
 .c-form-g {
+  position: relative;
   margin: 10px 0 0 0;
 }
 
@@ -695,6 +696,23 @@ textarea.c-field {
 
 .c-form-g--form:last-child {
   margin: 0;
+}
+
+.c-form-g.has-error .help-block {
+  display: block;
+}
+
+.help-block {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 13px;
+  margin: 0;
+}
+
+.help-block-error {
+  color: red;
 }
 
 .c-box {
@@ -2120,17 +2138,6 @@ p:last-child {
   }
 }
 
-.c-footer {
-  height: 41px;
-  line-height: 41px;
-  background: #78abdf;
-  text-align: center;
-  margin: -41px 0 0 0;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
-}
-
 .c-crumbs {
   margin: 0 0 15px 0;
   padding: 0;
@@ -2180,6 +2187,17 @@ p:last-child {
 
 .c-crumbs:last-child {
   margin: 0;
+}
+
+.c-footer {
+  height: 41px;
+  line-height: 41px;
+  background: #78abdf;
+  text-align: center;
+  margin: -41px 0 0 0;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
 }
 
 .c-gallery__img {
