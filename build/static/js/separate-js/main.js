@@ -52,4 +52,15 @@ $(document).ready(function() {
 	});
 
 
+	
+
+	$(".fancybox-img").fancybox({
+        openEffect  : 'elastic',
+        closeEffect : 'elastic',
+        helpers : {
+            media : {}
+        }
+    });
+
+
 });
