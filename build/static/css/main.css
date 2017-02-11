@@ -2353,6 +2353,28 @@ p:last-child {
   position: relative;
 }
 
+.fancybox-img:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: -180px -60px;
+  width: 42px;
+  height: 42px;
+  background-size: 330px, 176px;
+  background-repeat: no-repeat;
+  opacity: .8;
+  -webkit-transition: all, 0.15s;
+  transition: all, 0.15s;
+}
+
+.fancybox-img:hover:after {
+  opacity: 1;
+}
+
 .fancybox-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -2503,35 +2525,6 @@ p:last-child {
 .c-nav .slick-list {
   margin-left: -5px;
   margin-right: -5px;
-}
-
-.c-nav .slick-arrow {
-  width: 91px;
-  opacity: .8;
-  -webkit-transition: all, 0.2s;
-  transition: all, 0.2s;
-}
-
-.c-nav .slick-arrow:hover {
-  opacity: .9;
-}
-
-.c-nav .slick-prev:after {
-  background-image: url(../img/png-sprite/96dpi/sprite.png);
-  background-position: -226px -60px;
-  width: 42px;
-  height: 42px;
-  background-size: 330px, 176px;
-  background-repeat: no-repeat;
-}
-
-.c-nav .slick-next:after {
-  background-image: url(../img/png-sprite/96dpi/sprite.png);
-  background-position: -180px -60px;
-  width: 42px;
-  height: 42px;
-  background-size: 330px, 176px;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 567px) {

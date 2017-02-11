@@ -21,27 +21,26 @@
 		margin-right: -5px;
 	}
 
-	// i-sl-nav-prev
 
-	.slick-arrow {
-		width: 91px;
-		opacity: .8;
-		@include transition(all, .2s);
+	// .slick-arrow {
+	// 	width: 91px;
+	// 	opacity: .8;
+	// 	@include transition(all, .2s);
 
-		&:hover {
-			opacity: .9;
-		}
-	}
-	.slick-prev {
-		&:after {
-			@include bg($i-sl-nav-prev);
-		}
-	}
-	.slick-next {
-		&:after {
-			@include bg($i-sl-nav-next);
-		}
-	}
+	// 	&:hover {
+	// 		opacity: .9;
+	// 	}
+	// }
+	// .slick-prev {
+	// 	&:after {
+	// 		@include bg($i-sl-nav-prev);
+	// 	}
+	// }
+	// .slick-next {
+	// 	&:after {
+	// 		@include bg($i-sl-nav-next);
+	// 	}
+	// }
 
 }
 

@@ -11,4 +11,5 @@ mixin gallery()
 		.c-nav.slick-slider.js-nav-slider
 			- for (let i = 0;i < 6;i++)
 				.c-nav__item
-					img(data-lazy="static/img/content/img-gallery-sm.jpg", alt="").c-gallery__img
+					.fancybox-img
+						img(data-lazy="static/img/content/img-gallery-sm.jpg", alt="").c-gallery__img

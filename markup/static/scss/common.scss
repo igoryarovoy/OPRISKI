@@ -273,6 +273,23 @@ p {
 .fancybox-img {
     display: block;
     position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include bg($i-sl-nav-next);
+        opacity: .8;
+        @include transition(all, .15s);
+    }
+
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
 }
 .fancybox-overlay {
     background: rgba(0, 0, 0, .5);
