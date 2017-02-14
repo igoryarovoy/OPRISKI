@@ -347,6 +347,11 @@ textarea.c-field {
         }
     }
 
+    [class^="o-grid__"] {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
 }
 
 // -------- LIST END
