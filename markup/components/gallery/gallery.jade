@@ -6,10 +6,13 @@ mixin gallery()
 					img(data-lazy="static/img/content/img-gallery-big.jpg", alt="").c-gallery__img
 			- for (let i = 0;i < 2;i++)
 				.c-view__item
-					a(href="https://youtu.be/lWA2pjMjpBs").fancybox-img
+					a(href="https://youtu.be/lWA2pjMjpBs").fancybox-img.ico-play
 						img(data-lazy="static/img/content/img-gallery-big.jpg", alt="").c-gallery__img
 		.c-nav.slick-slider.js-nav-slider
-			- for (let i = 0;i < 6;i++)
+			- for (let i = 0;i < 4;i++)
 				.c-nav__item
-					.fancybox-img
+					img(data-lazy="static/img/content/img-gallery-sm.jpg", alt="").c-gallery__img
+			- for (let i = 0;i < 2;i++)
+				.c-nav__item
+					.ico-play
 						img(data-lazy="static/img/content/img-gallery-sm.jpg", alt="").c-gallery__img

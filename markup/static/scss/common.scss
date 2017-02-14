@@ -270,8 +270,7 @@ p {
 
 }
 
-.fancybox-img {
-    display: block;
+.ico-play {
     position: relative;
 
     &:after {
@@ -290,6 +289,10 @@ p {
             opacity: 1;
         }
     }
+}
+.fancybox-img {
+    display: block;
+    position: relative;
 }
 .fancybox-overlay {
     background: rgba(0, 0, 0, .5);

@@ -2348,12 +2348,11 @@ p:last-child {
           transform: scale(1);
 }
 
-.fancybox-img {
-  display: block;
+.ico-play {
   position: relative;
 }
 
-.fancybox-img:after {
+.ico-play:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -2371,8 +2370,13 @@ p:last-child {
   transition: all, 0.15s;
 }
 
-.fancybox-img:hover:after {
+.ico-play:hover:after {
   opacity: 1;
+}
+
+.fancybox-img {
+  display: block;
+  position: relative;
 }
 
 .fancybox-overlay {
