@@ -8,6 +8,11 @@
 
 .c-view {
 	margin: 0 0 10px 0;
+
+	&__item {
+		max-height: 392px;
+		overflow: hidden;
+	}
 }
 
 .c-nav {
@@ -15,6 +20,8 @@
 
 	&__item {
 		padding: 0 5px;
+		max-height: 105px;
+		overflow: hidden;
 	}
 	.slick-list {
 		margin-left: -5px;

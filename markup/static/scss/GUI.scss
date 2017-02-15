@@ -240,10 +240,9 @@ textarea.c-field {
 
 .c-form-g {
     position: relative;
-    margin: $sm-space-less2 0 0 0;
+    margin: $sm-space-less2*2 0 0 0;
 
     &--form {
-        margin: 0 0 20px 0;
 
         &:last-child {
             margin: 0;
@@ -261,7 +260,7 @@ textarea.c-field {
     position: absolute;
     left: 0;
     top: 100%;
-    font-size: 13px;
+    font-size: 11px;
     margin: 0;
 }
 .help-block-error {

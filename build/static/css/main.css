@@ -687,11 +687,7 @@ textarea.c-field {
 
 .c-form-g {
   position: relative;
-  margin: 10px 0 0 0;
-}
-
-.c-form-g--form {
-  margin: 0 0 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .c-form-g--form:last-child {
@@ -707,7 +703,7 @@ textarea.c-field {
   position: absolute;
   left: 0;
   top: 100%;
-  font-size: 13px;
+  font-size: 11px;
   margin: 0;
 }
 
@@ -2523,12 +2519,19 @@ p:last-child {
   margin: 0 0 10px 0;
 }
 
+.c-view__item {
+  max-height: 392px;
+  overflow: hidden;
+}
+
 .c-nav {
   overflow: hidden;
 }
 
 .c-nav__item {
   padding: 0 5px;
+  max-height: 105px;
+  overflow: hidden;
 }
 
 .c-nav .slick-list {
@@ -2640,6 +2643,8 @@ p:last-child {
 .c-item-img__img {
   display: block;
   margin: 0 0 7px 0;
+  max-height: 133px;
+  overflow: hidden;
 }
 
 .c-item-img__img img {
