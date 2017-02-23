@@ -18,35 +18,50 @@ html(lang="ru")
                 +header()
                 .o-page-section.o-page-section--sm
                     +mainBunner()
+                .o-page-section.o-page-section--sm
+                    .c-media-box
+                        img(src="static/img/content/img-bun-1.png", alt="")
                 .o-page-section.o-page-section--xs
                     h1.c-h1 Лёгкий способ подобрать опрыскиватель
-                    +crumbs()
-                    .o-grid.o-grid--sm
-                        .o-grid__xs-landscape-5.o-grid__sm-3.u-mb-10
-                            .c-dropdown
-                                button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
-                                .c-dropdown__menu
-                                    a(href="#").c-dropdown__link Пункт 1
-                                    a(href="#").c-dropdown__link.is-active Пункт 2
-                                    a(href="#").c-dropdown__link Пункт 3
-                                    a(href="#").c-dropdown__link Пункт 4
-                        .o-grid__xs-landscape-5.o-grid__sm-3.u-mb-10
-                            .c-dropdown
-                                button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Тип опрыскивателя
-                                .c-dropdown__menu
-                                    a(href="#").c-dropdown__link Пункт 1
-                                    a(href="#").c-dropdown__link.is-active Пункт 2
-                                    a(href="#").c-dropdown__link Пункт 3
-                                    a(href="#").c-dropdown__link Пункт 4
+                    .o-grid
+                        .o-grid__md-6
+                            +crumbs()
+                            .o-grid.o-grid--sm
+                                .o-grid__xs-landscape-5.o-grid__sm-3.o-grid__md-6.u-mb-10
+                                    .c-dropdown
+                                        button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
+                                        .c-dropdown__menu
+                                            a(href="#").c-dropdown__link Пункт 1
+                                            a(href="#").c-dropdown__link.is-active Пункт 2
+                                            a(href="#").c-dropdown__link Пункт 3
+                                            a(href="#").c-dropdown__link Пункт 4
+                                .o-grid__xs-landscape-5.o-grid__sm-3.o-grid__md-6.u-mb-10
+                                    .c-dropdown
+                                        button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Тип опрыскивателя
+                                        .c-dropdown__menu
+                                            a(href="#").c-dropdown__link Пункт 1
+                                            a(href="#").c-dropdown__link.is-active Пункт 2
+                                            a(href="#").c-dropdown__link Пункт 3
+                                            a(href="#").c-dropdown__link Пункт 4
+                        .o-grid__md-6
+                            .u-mt-10
+                                .c-media-box
+                                    img(src="static/img/content/img-bun-3.png", alt="")
                 .o-page-section.o-page-section--sm
                     +result('c-result--best c-box--marked')
                     +result('c-result--recommend c-box--marked')
                     +result('c-result--optimal c-box--marked')
                     +result('c-result--tested')
+                    .o-page-section.o-page-section--xs
+                        .c-media-box
+                            img(src="static/img/content/img-bun-1.png", alt="")
                     - for (let i = 0;i < 6;i++)
                         +result()
                 .o-page-section.o-page-section--sm.u-text-center
                     a(href="#").c-btn.c-btn--info Показать больше предложений
+                .o-page-section.o-page-section--sm
+                    .c-media-box
+                        img(src="static/img/content/img-bun-1.png", alt="")
             +botPanel()
         +footer()
         +includeJS()

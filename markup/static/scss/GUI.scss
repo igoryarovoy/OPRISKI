@@ -431,3 +431,16 @@ textarea.c-field {
 
 
 // -------- SLIDE CONTENT END
+
+
+
+.c-media-box {
+    font-size: 0;
+    text-align: center;
+
+    & > * {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+    }
+}
