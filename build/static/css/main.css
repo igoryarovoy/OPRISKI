@@ -518,6 +518,8 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   border-radius: 3px;
   -webkit-transition: all, 0.12s;
   transition: all, 0.12s;
+  max-height: 380px;
+  overflow-y: auto;
 }
 
 .c-dropdown__link {
@@ -2515,6 +2517,17 @@ p:last-child {
   margin: 0;
 }
 
+.c-footer {
+  height: 41px;
+  line-height: 41px;
+  background: #78abdf;
+  text-align: center;
+  margin: -41px 0 0 0;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
 .c-gallery__img {
   display: block;
   width: 100%;
@@ -2556,17 +2569,6 @@ p:last-child {
   .c-view .slick-arrow {
     display: none !important;
   }
-}
-
-.c-footer {
-  height: 41px;
-  line-height: 41px;
-  background: #78abdf;
-  text-align: center;
-  margin: -41px 0 0 0;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
 }
 
 .c-header {

@@ -6,11 +6,10 @@ $(document).ready(function() {
 		arrows: true,
 		draggable: true,
 		dots: true,
-		// autoplay: true,
-		// autoplaySpeed: 5000,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		lazyLoad: 'ondemand'
 	});
-
 
 	$('.js-view').slick({
 		slidesToShow: 1,
@@ -31,7 +30,6 @@ $(document).ready(function() {
 		asNavFor: '.js-view'
 	});
 
-
 	$('.js-modal').on('show.bs.modal', function () {
 		var docHeight    = $(document).height(),
 			windowHeight = $(window).height(),
@@ -51,9 +49,6 @@ $(document).ready(function() {
 		$('body').css("paddingRight", "0");
 	});
 
-
-	
-
 	$(".fancybox-img").fancybox({
         openEffect  : 'elastic',
         closeEffect : 'elastic',
@@ -61,6 +56,4 @@ $(document).ready(function() {
             media : {}
         }
     });
-
-
 });
