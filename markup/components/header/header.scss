@@ -1,23 +1,23 @@
 .c-header {
-	padding: 15px 0;
-	min-height: 90px;
-	@include cf();
+    padding: 15px 0;
+    min-height: 90px;
+    @include cf();
 
-	&__logo {
-		float: left;
-		height: 60px;
-		font-size: 0;
+    &__logo {
+        float: left;
+        height: 60px;
+        font-size: 0;
 
-		&:before,
-		img {
-			display: inline-block;
-			vertical-align: middle;
-		}
+        &:before,
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
 
-		&:before {
-			content: '';
-			width: 0;
-			height: 100%;
-		}
-	}
+        &:before {
+            content: '';
+            width: 0;
+            height: 100%;
+        }
+    }
 }

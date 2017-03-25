@@ -3,11 +3,12 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
-    
+
     * {
         box-sizing: inherit;
     }
 }
+
 body {
     font-family: $main-font;
     font-size: $main-font-size;
@@ -28,8 +29,6 @@ body {
 
 @import 'entry/partials/_objects.scss';
 
-
-
 a {
     color: $primary-light-text-color;
     text-decoration: none;
@@ -39,7 +38,6 @@ a {
         text-decoration: underline;
     }
 }
-
 
 h1, .c-h1, h2, .c-h2, h3, .c-h3, h4, .c-h4, h5, .c-h5, h6, .c-h6 {
     display: block;
@@ -51,21 +49,27 @@ h1, .c-h1, h2, .c-h2, h3, .c-h3, h4, .c-h4, h5, .c-h5, h6, .c-h6 {
         margin-bottom: 0;
     }
 }
+
 h1, .c-h1 {
     font-size: 26px;
 }
+
 h2, .c-h2 {
     font-size: 22px;
 }
+
 h3, .c-h3 {
     font-size: 20px;
 }
+
 h4, .c-h4 {
     font-size: 18px;
 }
+
 h5, .c-h5, h6, .c-h6 {
     font-size: 16px;
 }
+
 .c-h-logo {
     display: inline-block;
     vertical-align: middle;
@@ -83,16 +87,16 @@ p {
     }
 }
 
-
 // SLIDER
 
 .slick-slider {
-    opacity: 0; 
+    opacity: 0;
 
     &.slick-initialized {
         opacity: 1;
     }
 }
+
 .slick-arrow {
     position: absolute;
     top: 0;
@@ -112,6 +116,7 @@ p {
         transform: translateY(-50%);
     }
 }
+
 .slick-prev {
     left: 0;
 
@@ -126,6 +131,7 @@ p {
         }
     }
 }
+
 .slick-next {
     right: 0;
 
@@ -140,6 +146,7 @@ p {
         }
     }
 }
+
 .slick-dots {
     margin: 0;
     padding: 0;
@@ -172,12 +179,12 @@ p {
         display: none;
     }
 }
+
 .slick-slide {
     outline: none;
 }
 
 // SLIDER END
-
 
 // MODALS
 
@@ -213,7 +220,7 @@ p {
         display: inline-block;
         vertical-align: middle;
     }
-    
+
     &__dialog {
         position: relative;
         font-size: 14px;
@@ -290,13 +297,16 @@ p {
         }
     }
 }
+
 .fancybox-img {
     display: block;
     position: relative;
 }
+
 .fancybox-overlay {
     background: rgba(0, 0, 0, .5);
 }
+
 .fancybox-close {
     background: #fff;
     @include border-radius(50%);
@@ -313,7 +323,7 @@ p {
 }
 
 @media (min-width: $media-xs) {
-    
+
     .c-modal {
         &__close {
             right: 15px;
@@ -322,8 +332,9 @@ p {
     }
 
 }
+
 @media (min-width: $media-md) {
-    
+
     .c-modal {
         &__dialog {
             padding: 45px 20px 50px;
@@ -331,6 +342,5 @@ p {
     }
 
 }
-
 
 // MODALS END

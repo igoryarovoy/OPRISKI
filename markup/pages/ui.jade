@@ -1,69 +1,69 @@
 doctype html
 html(lang="ru")
 
-	include ../components/head/head
-	include ../components/rating/rating
-	include ../components/includeJS/includeJS
+    include ../components/head/head
+    include ../components/rating/rating
+    include ../components/includeJS/includeJS
 
-	head
-		+head(head.defaults)
-	body
-		.c-modal(id="modal-form")
-			.c-modal__dialog
-				span.c-modal__close(data-dismiss="modal")
-				.c-h2.c-modal__h.u-text-primary Форма заявки
-				.c-modal__content
-					.c-form-g.c-form-g--form
-						label(for="f-sel-name").c-h5.u-mb-10 Название хозяйства:
-						.c-dropdown
-							select(id="f-sel-name").c-dropdown__btn.c-btn.c-btn--info
-								option(value="Название 1") Название 1
-								option(value="Название 2") Название 2
-					.c-form-g.c-form-g--form
-						label(for="f-sel-loc").c-h5.u-mb-10 Область:
-						.c-dropdown
-							select(id="f-sel-loc").c-dropdown__btn.c-btn.c-btn--info
-								option(value="Название 1") Название 1
-								option(value="Название 2") Название 2
-					.c-form-g.c-form-g--form
-						label(for="f-area").c-h5.u-mb-10 Район:
-						input(type="text", id="f-area").c-field
-						p.help-block.help-block-error Текст ошибки
-					.c-form-g.c-form-g--form.has-error
-						.u-clearfix
-							.u-fl-r.u-mt-2.u-fs-12.u-text-info в формате: +380123456789
-							label(for="f-phone").c-h5.u-mb-10 Ваш телефон:
-						input(type="text", id="f-phone").c-field
-						p.help-block.help-block-error Текст ошибки
-					.u-text-center.u-mt-30
-						button(type="submit").c-btn.c-btn--primary.c-btn--full-h Подать заявку
-		.o-wrapper
-			.o-center
-				.o-page-section
-					button.c-btn.c-btn--info Оформить заявку
-				.o-page-section
-					button.c-btn.c-btn--info.c-btn--full-w Оформить заявку
-				.o-page-section
-					a(href="#").c-btn.c-btn--primary Отправить
-				.o-page-section
-					a(href="#").c-btn.c-btn--primary.c-btn--full-h Отправить
-				.o-page-section
-					a(href="#").c-btn.c-btn--primary.c-btn--lg-fs Отправить
-				.o-page-section
-					.c-dropdown
-						button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
-						.c-dropdown__menu
-							a(href="#").c-dropdown__link Пункт 1
-							a(href="#").c-dropdown__link.is-active Пункт 2
-							a(href="#").c-dropdown__link Пункт 3
-							a(href="#").c-dropdown__link Пункт 4
-				.o-page-section
-					input(type="text", placeholder="Ваше имя").c-field
-				.o-page-section
-					textarea(rows="4", placeholder="Ваше имя").c-field
-				.o-page-section
-					+rating('1')
-				.o-page-section
-					button.c-btn.c-btn--primary.c-btn--lg-fs(data-toggle="modal" data-target="#modal-form") Modal FORM
-		
-		+includeJS()
+    head
+        +head(head.defaults)
+    body
+        .c-modal(id="modal-form")
+            .c-modal__dialog
+                span.c-modal__close(data-dismiss="modal")
+                .c-h2.c-modal__h.u-text-primary Форма заявки
+                .c-modal__content
+                    .c-form-g.c-form-g--form
+                        label(for="f-sel-name").c-h5.u-mb-10 Название хозяйства:
+                        .c-dropdown
+                            select(id="f-sel-name").c-dropdown__btn.c-btn.c-btn--info
+                                option(value="Название 1") Название 1
+                                option(value="Название 2") Название 2
+                    .c-form-g.c-form-g--form
+                        label(for="f-sel-loc").c-h5.u-mb-10 Область:
+                        .c-dropdown
+                            select(id="f-sel-loc").c-dropdown__btn.c-btn.c-btn--info
+                                option(value="Название 1") Название 1
+                                option(value="Название 2") Название 2
+                    .c-form-g.c-form-g--form
+                        label(for="f-area").c-h5.u-mb-10 Район:
+                        input(type="text", id="f-area").c-field
+                        p.help-block.help-block-error Текст ошибки
+                    .c-form-g.c-form-g--form.has-error
+                        .u-clearfix
+                            .u-fl-r.u-mt-2.u-fs-12.u-text-info в формате: +380123456789
+                            label(for="f-phone").c-h5.u-mb-10 Ваш телефон:
+                        input(type="text", id="f-phone").c-field
+                        p.help-block.help-block-error Текст ошибки
+                    .u-text-center.u-mt-30
+                        button(type="submit").c-btn.c-btn--primary.c-btn--full-h Подать заявку
+        .o-wrapper
+            .o-center
+                .o-page-section
+                    button.c-btn.c-btn--info Оформить заявку
+                .o-page-section
+                    button.c-btn.c-btn--info.c-btn--full-w Оформить заявку
+                .o-page-section
+                    a(href="#").c-btn.c-btn--primary Отправить
+                .o-page-section
+                    a(href="#").c-btn.c-btn--primary.c-btn--full-h Отправить
+                .o-page-section
+                    a(href="#").c-btn.c-btn--primary.c-btn--lg-fs Отправить
+                .o-page-section
+                    .c-dropdown
+                        button.c-dropdown__btn.c-btn.c-btn--info(data-toggle="dropdown") Производитель
+                        .c-dropdown__menu
+                            a(href="#").c-dropdown__link Пункт 1
+                            a(href="#").c-dropdown__link.is-active Пункт 2
+                            a(href="#").c-dropdown__link Пункт 3
+                            a(href="#").c-dropdown__link Пункт 4
+                .o-page-section
+                    input(type="text", placeholder="Ваше имя").c-field
+                .o-page-section
+                    textarea(rows="4", placeholder="Ваше имя").c-field
+                .o-page-section
+                    +rating('1')
+                .o-page-section
+                    button.c-btn.c-btn--primary.c-btn--lg-fs(data-toggle="modal" data-target="#modal-form") Modal FORM
+
+        +includeJS()

@@ -1,40 +1,40 @@
 .c-rating {
-	position: relative;
-	display: inline-block;
+    position: relative;
+    display: inline-block;
 
-	input {
-		position: absolute;
-		left: -999999999px;
-		opacity: 0;
-		visibility: hidden;
-		z-index: 0;	
-	}
+    input {
+        position: absolute;
+        left: -999999999px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+    }
 
-	&__btn {
-		float: right;
-		cursor: pointer;
-		margin: 0 0 0 4px;
-		@include bg($i-rat-btn);
-		transition: transform .1s;
+    &__btn {
+        float: right;
+        cursor: pointer;
+        margin: 0 0 0 4px;
+        @include bg($i-rat-btn);
+        transition: transform .1s;
 
-		&:last-child {
-			margin: 0;
-		}
+        &:last-child {
+            margin: 0;
+        }
 
-		&:hover {
-			@include bg($i-rat-btn-active);
+        &:hover {
+            @include bg($i-rat-btn-active);
 
-			& ~ .c-rating__btn {
-				@include bg($i-rat-btn-active);
-			}
-		}
+            & ~ .c-rating__btn {
+                @include bg($i-rat-btn-active);
+            }
+        }
 
-		&:active {
-			transform: scale(2);
-		}
-	}	
+        &:active {
+            transform: scale(2);
+        }
+    }
 
-	input:checked ~ .c-rating__btn {
-		@include bg($i-rat-btn-active);
-	}
+    input:checked ~ .c-rating__btn {
+        @include bg($i-rat-btn-active);
+    }
 }

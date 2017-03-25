@@ -75,8 +75,6 @@
 
 // -------- BUTTONS END
 
-
-
 // -------- DROPDOWN
 
 .c-dropdown {
@@ -148,8 +146,6 @@
 
 // -------- DROPDOWN END
 
-
-
 // -------- ICONS
 
 .c-list-ico {
@@ -159,6 +155,7 @@
         margin: 0 4px 0 0;
     }
 }
+
 .c-ico {
     display: inline-block;
 
@@ -192,7 +189,6 @@
     }
 }
 
-
 .c-link-location {
     position: relative;
     padding: 0 0 0 17px;
@@ -206,8 +202,6 @@
 }
 
 // -------- ICONS END
-
-
 
 // -------- FORM
 
@@ -235,6 +229,7 @@
         @include placeholderColor($danger-text-color);
     }
 }
+
 textarea.c-field {
     height: auto;
     padding: 10px;
@@ -257,6 +252,7 @@ textarea.c-field {
         }
     }
 }
+
 .help-block {
     display: none;
     position: absolute;
@@ -265,14 +261,12 @@ textarea.c-field {
     font-size: 11px;
     margin: 0;
 }
+
 .help-block-error {
     color: red;
 }
 
-
 // -------- FORM END
-
-
 
 // -------- BOX
 
@@ -309,7 +303,7 @@ textarea.c-field {
 }
 
 @media (min-width: $media-xs) {
-    
+
     .c-box {
         &__section {
             padding: 25px 30px;
@@ -324,12 +318,10 @@ textarea.c-field {
 
 // -------- BOX END
 
-
-
 // -------- LIST
 
 .c-list {
-    
+
     &__row {
         display: table;
         width: 100%;
@@ -357,7 +349,6 @@ textarea.c-field {
 
 // -------- LIST END
 
-
 // -------- RATTEXT
 
 .c-rt {
@@ -376,7 +367,6 @@ textarea.c-field {
 
 // -------- RATTEXT END
 
-
 // -------- IMG
 
 .c-img {
@@ -391,19 +381,17 @@ textarea.c-field {
 
 // -------- IMG END
 
-
-
 // -------- SLIDE CONTENT
 
 .c-slide-content {
-    height: 500px!important;
+    height: 500px !important;
     overflow: hidden;
     position: relative;
-    display: block!important;
+    display: block !important;
 
     &.collapsing,
     &.in {
-        height: auto!important;
+        height: auto !important;
 
         .c-slide-content__btn {
             display: none;
@@ -422,19 +410,15 @@ textarea.c-field {
     }
 }
 
-
 @media (min-width: $media-md) {
-    
+
     .c-slide-content {
-        height: 910px!important;
+        height: 910px !important;
     }
 
 }
 
-
 // -------- SLIDE CONTENT END
-
-
 
 .c-media-box {
     font-size: 0;

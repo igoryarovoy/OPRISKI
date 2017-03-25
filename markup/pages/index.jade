@@ -7,6 +7,7 @@ html(lang="ru")
     include ../components/crumbs/crumbs
     include ../components/result/result
     include ../components/bot-panel/bot-panel
+    include ../components/pagination/pagination
     include ../components/footer/footer
     include ../components/includeJS/includeJS
 
@@ -59,6 +60,8 @@ html(lang="ru")
                         +result()
                 .o-page-section.o-page-section--sm.u-text-center
                     a(href="#").c-btn.c-btn--info Показать больше предложений
+                .o-page-section.o-page-section--sm.u-text-center
+                    +pagination()
                 .o-page-section.o-page-section--sm
                     .c-media-box
                         img(src="static/img/content/img-bun-1.png", alt="")

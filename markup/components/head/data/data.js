@@ -1,6 +1,8 @@
 head: {
     defaults: {
         title: 'opriski',
-        useSocialMetaTags: false
+            useSocialMetaTags
+    :
+        false
     }
 }

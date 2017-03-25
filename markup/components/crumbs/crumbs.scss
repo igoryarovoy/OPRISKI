@@ -1,41 +1,41 @@
 .c-crumbs {
-	margin: 0 0 12px 0;
-	padding: 0;
-	list-style: none;
-	font-size: 14px;
-	@include cf;
+    margin: 0 0 12px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    @include cf;
 
-	&__item {
-		float: left;
-		margin: 0 0 0 5px;
+    &__item {
+        float: left;
+        margin: 0 0 0 5px;
 
-		&:first-child {
-			margin: 0 0 0 0;
+        &:first-child {
+            margin: 0 0 0 0;
 
-			.c-crumbs__btn {
-				&:before {
-					display: none;
-				}
-			}
-		}
-	}	
+            .c-crumbs__btn {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
 
-	&__btn {
-		display: block;
+    &__btn {
+        display: block;
 
-		&:before {
-			content: '/';
-			display: inline-block;
-			margin: 0 5px 0 0;
-			// vertical-align: middle;
-		}
+        &:before {
+            content: '/';
+            display: inline-block;
+            margin: 0 5px 0 0;
+            // vertical-align: middle;
+        }
 
-		&.is-active {
-			color: $main-text-color;
-		}
-	}
+        &.is-active {
+            color: $main-text-color;
+        }
+    }
 
-	&:last-child {
-		margin: 0;
-	}
+    &:last-child {
+        margin: 0;
+    }
 }

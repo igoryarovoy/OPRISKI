@@ -1310,7 +1310,7 @@ tbody.collapse.in {
 
 .fancybox-error {
   color: #444;
-  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 15px;
   white-space: nowrap;
@@ -1452,7 +1452,7 @@ tbody.collapse.in {
 /* Title helper */
 .fancybox-title {
   visibility: hidden;
-  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   text-shadow: none;
   z-index: 8050;
@@ -2738,6 +2738,57 @@ p:last-child {
     text-align: right;
     padding: 0 50px;
   }
+}
+
+.pagination {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  margin: 0 2px;
+}
+
+.pagination li:hover a, .pagination li.active a {
+  background: #fff;
+  border-color: #a1a1a1;
+}
+
+.pagination li.disabled {
+  cursor: default;
+  opacity: .5;
+}
+
+.pagination li.disabled a, .pagination li.disabled span {
+  border-color: #a1a1a1;
+}
+
+.pagination span,
+.pagination a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #222222;
+  border-radius: 3px;
+  border: 1px solid #c3c3c3;
+  background: #edeeed;
+  background: -webkit-linear-gradient(bottom, #edeeed, #fffeff);
+  background: linear-gradient(to top, #edeeed, #fffeff);
+}
+
+.pagination span:hover,
+.pagination a:hover {
+  text-decoration: none;
+  background: #eeedee;
+  background: -webkit-linear-gradient(bottom, #eeedee, #ffffff);
+  background: linear-gradient(to top, #eeedee, #ffffff);
 }
 
 .c-rating {
