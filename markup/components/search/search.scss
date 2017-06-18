@@ -1,0 +1,22 @@
+.c-search {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    min-width: 250px;
+
+    &__btn {
+        position: relative;
+        width: 36px;
+        min-width: 36px;
+        margin: 0 0 0 10px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @include bg($i-search-light);
+        }
+    }
+}

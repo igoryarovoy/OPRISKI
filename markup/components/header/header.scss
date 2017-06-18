@@ -1,7 +1,10 @@
 .c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 15px 0;
     min-height: 90px;
-    @include cf();
 
     &__logo {
         float: left;
@@ -20,4 +23,18 @@
             height: 100%;
         }
     }
+}
+
+
+@media (max-width: $media-xs - 1px) {
+
+    .c-header {
+
+        .c-search {
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+
+    }
+
 }

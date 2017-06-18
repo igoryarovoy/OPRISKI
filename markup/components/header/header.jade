@@ -1,4 +1,6 @@
 mixin header()
+    include ../search/search
     header.c-header
         a(href="#").c-header__logo
             img(src="static/img/general/logo.png", alt="")
+        +search()
