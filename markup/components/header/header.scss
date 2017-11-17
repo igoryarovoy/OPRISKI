@@ -6,6 +6,14 @@
     padding: 15px 0;
     min-height: 90px;
 
+    &__content {
+        float: left;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__logo {
         float: left;
         height: 60px;
@@ -26,13 +34,25 @@
 }
 
 
-@media (max-width: $media-xs - 1px) {
+@media (max-width: $media-sm - 1px) {
 
     .c-header {
 
         .c-search {
             margin: 10px 0 0 0;
             width: 100%;
+        }
+
+    }
+
+}
+
+@media (min-width: $media-sm) {
+
+    .c-header {
+
+        &__content {
+            padding: 0 5px 0 0;
         }
 
     }

@@ -1,6 +1,9 @@
 mixin header()
     include ../search/search
+    include ../lang/lang
     header.c-header
-        a(href="#").c-header__logo
-            img(src="static/img/general/logo.png", alt="")
+        .c-header__content
+            a(href="#").c-header__logo
+                img(src="static/img/general/logo.png", alt="")
+            +lang()
         +search()

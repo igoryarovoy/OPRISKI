@@ -1,0 +1,43 @@
+.c-lang {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0;
+    position: relative;
+    line-height: 1;
+    white-space: nowrap;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 12px;
+        left: 50%;
+        top: 50%;
+        margin: -7px 0 0 -1px;
+        background-color: $info-text-color;
+    }
+
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        color: $main-text-color;
+        padding: 5px;
+
+        &.is-active {
+            color: $info-text-color;
+        }
+    }
+}
+
+@media (min-width: 340px) {
+
+    .c-lang {
+
+        &__btn {
+            padding: 8px;
+        }
+
+    }
+
+}
